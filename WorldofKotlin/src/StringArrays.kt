@@ -1,5 +1,3 @@
-import java.util.*
-
 fun main() {
     val stringArray = arrayOf("Hello","Kotlin","Programmers")
 
@@ -13,5 +11,5 @@ fun main() {
     stringArray[3] = "Increasing Size"
     println(stringArray[3])
 
-    println(Arrays.toString(stringArray))
+    println(stringArray.contentToString())
 }

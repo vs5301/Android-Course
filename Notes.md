@@ -46,3 +46,11 @@ Symbols which are used to perform some operation or a set of opereations on a va
     Comparison operators (==. !=, <, >, <=, >=)
     Assignment operatos (=, +=, -=, *=, /=, %=)
     Increment & Decrement operators (++, --)
+
+Nested If-Else < - > When statement
+
+when{
+(condition) -> (statement)
+}
+
+'In' operator -> '..'
