@@ -54,3 +54,24 @@ when{
 }
 
 'In' operator -> '..'
+
+Elvis Operator -> '?:'
+
+Safety operator: '?'
+Not-null operator: '!'
+
+Naming conventions for creating classes:
+
+        Use the keyword 'class' before the name of the class
+        The name of the class always starts with a capital letter
+
+Constructor:
+A constructor is a special kind of member function that is used to initialise the state or propreties of the newly created objects of a class.
+The constructor is written inside the class, but it gets invoked when you create an instance of a class (Objects)
+
+Data Classes
+
+        Used to store data
+        Perform operations directly on data stored in the objects of a class.
+        Help in omitting redundant code.
+        Primary constructor of a data class must always have atleast one parameter.
