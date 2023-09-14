@@ -75,3 +75,20 @@ Data Classes
         Perform operations directly on data stored in the objects of a class.
         Help in omitting redundant code.
         Primary constructor of a data class must always have atleast one parameter.
+
+Visibility Modifiers
+
+        public: Anything that is declared public is accessible everywhere in the project
+
+        private: A top-level function or class that is declared private can be accessed only within the file where it is declared
+        Any member function, constructor or property that is declared private is visible only within the class where it is declared.
+
+        protected: Any property or member function declared protected is visible or accessible only within the class and its subclasses where it has been declared.
+        A top level function cannot be declared protected. Only properties or member functions of a class can be declared protected.
+
+        internal: Anything declared internal is accessible only within the same module. A module is a set of files compiled together
+
+Features of Interfaces:
+
+        Interfaces are similar to classes but they do not have a state. So, they do not have constructors as well.
+        They can have functions with or without default implementations. That is, the function definition may not necessarily have to be there.
