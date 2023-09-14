@@ -10,4 +10,35 @@ fun main() {
     println(res3)
     println(res4)
     println(res5)
+
+    val dog1 = Dogs(4, "Brown")
+    dog1.eat()
+    dog1.sleep()
+//  dog1.bark()
+    dog1.sounds()
+
+    val cat1 = Cats(4, "White")
+    cat1.eat()
+    cat1.sleep()
+//  cat1.purr()
+    cat1.sounds()
+
+    val c = sum(10, 20)
+
+//    val d = difference(20, 10)
+
+    val e = division(20, 10)
+
+    val pro = Product()
+//    pro.product(10, 5)
+
+    val a = CallMe()
+
+    a.hello()
+    a.greeting()
+    a.newMethod()
+}
+
+class Product{
+    protected fun product(a: Int, b: Int) = a * b
 }
