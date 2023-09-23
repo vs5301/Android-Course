@@ -224,7 +224,7 @@
             <TextView
                 android:id="@+id/txtWidow"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Natasha Romanov"
                 android:textSize="18sp"
                 android:layout_toRightOf="@+id/imgWidow"
@@ -236,7 +236,7 @@
             <TextView
                 android:id="@+id/txtEmailWidow"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="steve@avengers.com"
                 android:textSize="18sp"
                 android:layout_toRightOf="@+id/imgWidow"
