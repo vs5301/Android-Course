@@ -222,7 +222,7 @@
                 />
 
             <TextView
-                android:id="@+id/imgWidow"
+                android:id="@+id/txtWidow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Natasha Romanov"

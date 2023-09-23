@@ -28,10 +28,6 @@
         android:textColor="#0d47a1"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@+id/txtLayoutHeader"
         />
 
@@ -52,6 +48,7 @@
         android:layout_margin="20dp"
         android:inputType="text"
         android:layout_below="@+id/txtLayoutSubHeader"
+        android:height="50dp"
         />
 
     <Button

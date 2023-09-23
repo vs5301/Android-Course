@@ -57,7 +57,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Enter your name here"
         android:layout_margin="20dp"
         android:inputType="text"
