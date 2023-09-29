@@ -1,16 +1,20 @@
-package com.internshala.bookhub
+package com.internshala.bookhub.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
+import com.internshala.bookhub.fragment.AboutFragment
+import com.internshala.bookhub.fragment.DashboardFragment
+import com.internshala.bookhub.fragment.FavouritesFragment
+import com.internshala.bookhub.fragment.ProfileFragment
+import com.internshala.bookhub.R
 
 class MainActivity : AppCompatActivity() {
 
