@@ -1,22 +1,27 @@
 package com.internshala.bookhub.fragment
 
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.internshala.bookhub.R
 import com.internshala.bookhub.adapter.DashboardRecyclerAdapter
 import com.internshala.bookhub.model.Book
+import com.internshala.bookhub.util.ConnectionManager
 
 class DashboardFragment : Fragment() {
 
     private lateinit var recyclerDashboard: RecyclerView
     private lateinit var layoutManager: RecyclerView.LayoutManager
+
+    private lateinit var btnCheckInternet: Button
 
     private val bookList = arrayListOf(
         "P.S. I Love You",
@@ -53,6 +58,36 @@ class DashboardFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
         recyclerDashboard = view.findViewById(R.id.recyclerDashboard)
+
+        btnCheckInternet = view.findViewById(R.id.btnCheckInternet)
+
+        btnCheckInternet.setOnClickListener{
+            if (ConnectionManager().checkConnectivity(activity as Context)){
+                val dialog = AlertDialog.Builder(activity as Context)
+                dialog.setTitle("Success")
+                dialog.setMessage("Internet Connection Found")
+                dialog.setPositiveButton("Ok"){text, listener ->
+
+                }
+                dialog.setNegativeButton("Cancel"){text, listener ->
+
+                }
+                dialog.create()
+                dialog.show()
+            } else {
+                val dialog = AlertDialog.Builder(activity as Context)
+                dialog.setTitle("Error")
+                dialog.setMessage("Internet Connection Not Found")
+                dialog.setPositiveButton("Ok"){text, listener ->
+
+                }
+                dialog.setNegativeButton("Cancel"){text, listener ->
+
+                }
+                dialog.create()
+                dialog.show()
+            }
+        }
 
         layoutManager = LinearLayoutManager(activity)
 
