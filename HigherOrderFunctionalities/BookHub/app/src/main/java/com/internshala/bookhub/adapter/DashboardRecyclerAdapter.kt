@@ -1,6 +1,7 @@
 package com.internshala.bookhub.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.internshala.bookhub.R
+import com.internshala.bookhub.activity.DescriptionActivity
 import com.internshala.bookhub.model.Book
 import com.squareup.picasso.Picasso
 import java.util.ArrayList
@@ -42,6 +44,12 @@ class DashboardRecyclerAdapter(private val context: Context, private val itemLis
         holder.txtBookRating.text = book.bookRating
 //        holder.imgBookImage.setImageResource(book.bookImage)
         Picasso.get().load(book.bookImage).error(R.drawable.default_book_cover).into(holder.imgBookImage)
+
+        holder.llContent.setOnClickListener{
+            val intent = Intent(context, DescriptionActivity::class.java)
+            intent.putExtra("book_id", book.bookId)
+            context.startActivity(intent)
+        }
 
         holder.llContent.setOnClickListener{
             Toast.makeText(context, "Clicked on ${holder.txtBookName.text}", Toast.LENGTH_SHORT).show()
